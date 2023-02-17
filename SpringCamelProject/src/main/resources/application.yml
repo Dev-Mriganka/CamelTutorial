@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/noduco
+    username: root
+    password: rootpass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+my:
+  app:
+    source: "file:src/main/resources?fileName=employee.csv&noop=true"
+  product:
+      source: "file:src/main/resources?fileName=products.csv&noop=true"
+
+
+sql:
+  insertEmployee: "sql:insert into employee (employeeName, employeeAge, employeeGender, employeeDepartment, employeeSalary) values (:#employeeName, :#employeeAge, :#employeeGender, :#employeeDepartment, :#employeeSalary);batch=true"
+
+
+camel:
+  main:
+    dev-console-enabled: true
