@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-//@Component
+@Component
 public class SedaRouteBuilder extends RouteBuilder {
 
     @Override
@@ -28,4 +28,5 @@ public class SedaRouteBuilder extends RouteBuilder {
                 .end();
 
     }
+
 }

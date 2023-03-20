@@ -1,11 +1,8 @@
 package com.nouco.SpringCamelProject.route;
 
-import com.nouco.SpringCamelProject.service.BatchSizePredicate;
-import com.nouco.SpringCamelProject.service.EmployeeAggregationStrategy;
 import com.nouco.SpringCamelProject.service.EmployeeProcessor;
 import org.apache.camel.CamelContext;
 import org.apache.camel.builder.RouteBuilder;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Map;

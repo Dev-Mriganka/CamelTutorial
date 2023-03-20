@@ -1,22 +1,12 @@
 package com.nouco.SpringCamelProject.route;
 
 import com.nouco.SpringCamelProject.entity.Product;
-import com.nouco.SpringCamelProject.rest.WeatherDataProvider;
-import com.nouco.SpringCamelProject.rest.WeatherDto;
-import org.apache.camel.Exchange;
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.Message;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.BindyType;
-import org.apache.camel.model.rest.RestBindingMode;
-import org.apache.camel.support.DefaultMessage;
-
-
-import java.util.Objects;
 
 import static org.apache.camel.Exchange.CORRELATION_ID;
-import static org.apache.camel.Exchange.HTTP_RESPONSE_CODE;
-import static org.springframework.http.HttpStatus.NOT_FOUND;
 
 //@Component
 public class ProductCsvRouteBuilder extends RouteBuilder {
